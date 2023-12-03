@@ -1,6 +1,6 @@
 DEBUG ?= 0
 
-dnevi := day1 day2
+dnevi := day1 day2 day3
 dnevi-execs := $(foreach dan,$(dnevi),$(dan)-solution)
 compile-cmd := g++ -Wall -pedantic -DDEBUG=$(DEBUG)
 
