@@ -66,6 +66,7 @@ std::vector<std::string> tokenize(const std::string& s, const std::string specia
             token += c;
         }
     }
+    if (token.length() > 0) tokens.push_back(token);
     return tokens;
 }
 

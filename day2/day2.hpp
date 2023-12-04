@@ -46,7 +46,7 @@ namespace day2 {
         }
 #if DEBUG
         debug("From string '%s', I made game(%d; ", line.c_str(), gameid);
-        for (int i = 0; i < red.size(); i++) {
+        for (unsigned int i = 0; i < red.size(); i++) {
             printf("%d,%d,%d; ", red[i], blue[i], green[i]);
         }
         putchar(10);
