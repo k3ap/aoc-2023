@@ -7,7 +7,7 @@
 #include <map>
 
 int main() {
-    std::ifstream ifs("day3/input");
+    std::ifstream ifs("day03/input");
     std::vector<std::string> grid;
     std::string t;
     while (getline(ifs, t))

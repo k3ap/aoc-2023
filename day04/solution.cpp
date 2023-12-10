@@ -6,7 +6,7 @@
 #include <fstream>
 
 int main() {
-    std::ifstream ifs("day4/input");
+    std::ifstream ifs("day04/input");
     std::string line;
 
     std::vector<int> num_cards(205, 1);

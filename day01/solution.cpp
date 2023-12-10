@@ -6,7 +6,7 @@
 
 int main() {
     // part 1
-    std::ifstream ifs("day1/input");
+    std::ifstream ifs("day01/input");
     std::string t;
     ll sum = 0;
     while (getline(ifs, t)) {
@@ -17,7 +17,7 @@ int main() {
     ifs.close();
 
     // part 2
-    ifs.open("day1/input");
+    ifs.open("day01/input");
     sum = 0;
     while (getline(ifs, t)) {
         std::pair<int, int> first_last = day1::get_first_and_last_number(t);

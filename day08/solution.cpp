@@ -5,7 +5,7 @@
 #include "../general.hpp"
 
 int main() {
-    std::ifstream ifs("day8/input");
+    std::ifstream ifs("day08/input");
     std::string instructions, t;
     std::getline(ifs, instructions);
     std::getline(ifs, t);

@@ -3,7 +3,7 @@
 #include <fstream>
 
 int main() {
-    std::ifstream ifs("day5/input");
+    std::ifstream ifs("day05/input");
     auto[rangemaps, initial_seeds] = day5::get_categories(ifs);
     ll m = -1;
     for (ll seed : initial_seeds) {

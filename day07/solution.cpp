@@ -6,7 +6,7 @@
 #include "../general.hpp"
 
 int main() {
-    std::ifstream ifs("day7/input");
+    std::ifstream ifs("day07/input");
     std::vector<std::pair<day7::hand, int>> data;
     std::string t;
     while (std::getline(ifs, t)) {

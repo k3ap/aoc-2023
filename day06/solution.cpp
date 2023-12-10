@@ -6,7 +6,7 @@
 #include <string>
 
 int main() {
-    std::ifstream ifs("day6/input");
+    std::ifstream ifs("day06/input");
 
     std::string s1, s2;
     getline(ifs, s1);

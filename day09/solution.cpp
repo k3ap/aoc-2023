@@ -4,7 +4,7 @@
 #include "day9.hpp"
 
 int main() {
-    std::ifstream ifs("day9/input");
+    std::ifstream ifs("day09/input");
     ll sum1 = 0, sum2 = 0;
     std::string t;
     while (std::getline(ifs, t)) {

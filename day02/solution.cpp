@@ -5,7 +5,7 @@
 #include <string>
 
 int main() {
-    std::ifstream ifs("day2/input");
+    std::ifstream ifs("day02/input");
     std::string s;
     int sum = 0;
     int powersum = 0;
