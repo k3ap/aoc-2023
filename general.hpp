@@ -17,6 +17,19 @@ struct cg {
         if (i == o.i) return j < o.j;
         return i < o.i;
     }
+
+    bool operator==(const cg &o) const { return i == o.i && j == o.j; }
+
+    bool operator!=(const cg &o) const { return i != o.i || j != o.j; }
+
+    std::vector<cg> adjacent4(uint ilim=1000000000, uint jlim=1000000000) {
+        std::vector<cg> res;
+        if (i > 0) res.push_back({i-1, j});
+        if (j > 0) res.push_back({i, j-1});
+        if (i < ilim-1) res.push_back({i+1, j});
+        if (j < jlim-1) res.push_back({i, j+1});
+        return res;
+    }
 };
 
 #define AT(c) [(c.i)][(c.j)]
