@@ -22,6 +22,12 @@ struct cg {
 
     bool operator!=(const cg &o) const { return i != o.i || j != o.j; }
 
+    uint manhattan(const cg& o) const {
+        uint d1 = (i < o.i) ? o.i - i : i - o.i;
+        uint d2 = (j < o.j) ? o.j - j : j - o.j;
+        return d1+d2;
+    }
+
     std::vector<cg> adjacent4(uint ilim=1000000000, uint jlim=1000000000) {
         std::vector<cg> res;
         if (i > 0) res.push_back({i-1, j});
