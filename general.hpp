@@ -38,6 +38,10 @@ struct cg {
     }
 };
 
+enum Direction {
+    north, south, west, east
+};
+
 #define AT(c) [(c.i)][(c.j)]
 
 void print_solution(int part, ll solution) {
