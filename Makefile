@@ -2,7 +2,7 @@ DEBUG ?= 0
 
 dnevi := $(wildcard day*)
 dnevi-execs := $(foreach dan,$(dnevi),solution-$(dan))
-compile-cmd := g++ -Wall -pedantic -DDEBUG=$(DEBUG) -g
+compile-cmd := g++ -Wall -pedantic -DDEBUG=$(DEBUG) -g -std=c++20
 
 
 all: $(dnevi-execs)
