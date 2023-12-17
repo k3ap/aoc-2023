@@ -11,6 +11,11 @@ typedef unsigned int uint;
 
 enum Direction { north='N', south='S', west='W', east='E' };
 
+std::vector<Direction> get_normal(Direction dir) {
+    if (dir == north || dir == south) return {east, west};
+    else return {north, south};
+}
+
 const uint ILIM = 1000000000, JLIM = 1000000000;
 
 // grid coordinate
